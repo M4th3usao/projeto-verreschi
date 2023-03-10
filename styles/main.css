@@ -166,8 +166,9 @@ a > img{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 250px;
-    background: black;
+    height: 200px;
+    /* background: rgb(223, 76, 22); */
+    background-color: rgb(206, 71, 22);
 
     position: relative;
     margin-bottom: 50px;
@@ -194,7 +195,7 @@ a > img{
 
 .swiper {
     width: 80%;
-    height: 55%;
+    height: 75%;
   }
 
   .swiper-slide {
@@ -244,6 +245,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    /* flex-wrap: wrap; */
     width: 100%;
     height: 70px;
     background-color: white;
@@ -256,10 +258,10 @@ footer{
     width: 600px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 12px;
     line-height: 14px;
-    color:purple;
+    color:black;
     /* color: #a6a6a6; */
     text-align: center;
 }
@@ -268,10 +270,10 @@ footer{
     width: 600px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 14px;
     line-height: 12px;
-    color:black;
+    color:purple;
     /* color: #a6a6a6; */
     text-align: center;
 }
@@ -326,8 +328,27 @@ footer{
         justify-content: space-between;
     }
 
-    footer{}
+    #bar{
+        height: 170px;
+    }
 
+    .swiper {
+        width: 80%;
+        height: 65%;
+      }    
+
+    #content-footer a{
+        font-size: 12px;
+    }
+
+    #content-footer h3{
+        width: 500px;
+        font-size: 10px;
+    }
+
+    #works{
+        font-size: 14px;
+    }
     
     #contacts{
         display: flex;
@@ -345,7 +366,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 899) {
+@media screen and (min-width: 700px) and (max-width: 899px) {
     #section-pictures{
         display: flex;
         align-items: center;
@@ -368,43 +389,70 @@ footer{
 
     .card{
         display: flex;
-        width: 300px;
+        width: 250px;
+        height: 300px;
         align-items: center;
         justify-content: space-between;
         padding-bottom: 20px;
     }
 
      
-.card a{
-    display: flex;
-    width: 100%;
-    height: 90%;
-    margin-bottom: 15px;
-}
+    .card a{
+        display: flex;
+        width: 100%;
+        height: 90%;
+        margin-bottom: 15px;
+    }
 
-a > img{
-    max-width: 80%;
-    margin: auto;
-}
+    a > img{
+        max-width: 80%;
+        margin: auto;
+    }
 
-.text-card{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+    .text-card{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-.text-card > p{
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 18px;
-}
+    .text-card > p{
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 18px;
+    }
 
-.text-card > h3{
-    font-family: 'Poppins', sans-serif;
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 39px;
-}
+    .text-card > h3{
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 39px;
+    }
+
+    #bar{
+        height: 140px;
+    }
+
+    .swiper {
+        width: 80%;
+        height: 75%;
+    }
+
+    /* -=-=-=-=-=-=-Footer-=-=-=-=-=-=- */
+
+    #works{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #content-footer p{
+        font-size: 12px;
+    }
+
+    #content-footer h3{
+        width: 300px;
+        font-size: 10px;
+    }
+
 
 }
