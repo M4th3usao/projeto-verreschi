@@ -186,29 +186,24 @@ a > img{
     border-radius:5px;
 }
 
-.icons-parteners{
-    width: 50px;
-}
-
 .swiper {
     width: 80%;
     height: 75%;
-  }
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .swiper-slide img {
-    display: block;
-    width: 90%;
-    
-  }
+.swiper-slide img {
+  display: block;
+  width: 90%;  
+}
 
 .swiper-pagination-bullet{
     color: white !important;
@@ -219,35 +214,18 @@ a > img{
 footer{
     width: 100%;
     position: fixed;
-    margin: auto;
     bottom: 0; 
     z-index: 99;
-}
-
-#works{
-    color: orangered;
-    font-style: normal;
-    text-decoration: none;
-
-    cursor: pointer;
-}
-
-#works:hover{
-    cursor: pointer;
-    color:  #25252599;
 }
 
 #content-footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
     width: 100%;
     height: 70px;
     background-color: white;
-    padding: 25px;
-
+    
     box-shadow: 0px 2px 6px 0.5px black;
 }
 
@@ -280,7 +258,6 @@ footer{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 160px;
 }
 
@@ -298,6 +275,18 @@ footer{
 .carousel--wrap{
     display: flex;
     flex-direction: row;
+}
+
+#works{
+    color: orangered;
+    font-style: normal;
+    text-decoration: none;  
+    cursor: pointer;
+}
+
+#works:hover{
+    cursor: pointer;
+    color:  #25252599;
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px){
@@ -346,7 +335,6 @@ footer{
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        flex-wrap: wrap;
         width: 100px;
     }
 
@@ -379,8 +367,7 @@ footer{
         justify-content: space-between;
         padding-bottom: 20px;
     }
-
-     
+  
     .card a{
         display: flex;
         width: 100%;
@@ -438,7 +425,17 @@ footer{
         font-size: 10px;
     }
 
+    #contacts{
+        flex-wrap: wrap;
 
+    }
+
+    #contacts img{
+        width: 20px;
+        margin: 5px;
+        border-radius: 5px;
+        /* padding: 10px; */
+    }
 }
 @media screen and (max-width: 749px) {
 
@@ -452,12 +449,10 @@ footer{
         display: flex;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
         width: 100%;
         
         margin-top: 25px;
         padding-bottom: 25px;
-    
     }
 
     .card{
@@ -501,21 +496,39 @@ footer{
         font-weight: 300;
         line-height: 39px;
     }
+
+    #whatsapp-button{
+        width: 40px;
+        right: 40px;
+    }
+
     
     /* -=-=-=-=-=-=-Footer-=-=-=-=-=-=- */
 
-    #works{
-        font-size: 12px;
-        text-align: center;
+    #content-footer{
+        height: 80px;
+        padding: 10px;
     }
 
     #content-footer p{
-        font-size: 12px;
+        width: 300px;
     }
 
     #content-footer h3{
         width: 300px;
-        font-size: 10px;
+    }
+
+    #contacts{
+        width: 100px;
+    }
+
+    #contacts img{
+        width: 20px;
+    }
+
+    #works{
+        width: 140px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 600px){
@@ -533,5 +546,35 @@ footer{
     .swiper-wrapper{
         width: 100% !important;
     }
-    
+
+    #whatsapp-button{
+        width: 40px;
+        right: 40px;
+    }
+
+    /* -=-=-=-=-=-=-Footer-=-=-=-=-=-=- */
+    #content-footer{
+        height: 80px;
+        padding: 10px;
+    }
+
+    #content-footer p{
+        width: 250px;
+    }
+
+    #content-footer h3{
+        width: 250px;
+    }
+
+    #contacts{
+        width: 100px;
+    }
+
+    #contacts img{
+        width: 20px;
+    }
+
+    #works{
+        width: 100px;
+    }
 }
