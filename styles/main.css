@@ -409,32 +409,37 @@ footer{
         height: 75%;
     }
 
-    /* -=-=-=-=-=-=-Footer-=-=-=-=-=-=- */
+    #whatsapp-button{
+        width: 40px;
+        right: 40px;
+    }
 
-    #works{
-        font-size: 12px;
-        text-align: center;
+    /* -=-=-=-=-=-=-Footer-=-=-=-=-=-=- */
+   
+    #content-footer{
+        height: 80px;
+        padding: 10px;
     }
 
     #content-footer p{
-        font-size: 12px;
+        width: 300px;
     }
 
     #content-footer h3{
         width: 300px;
-        font-size: 10px;
     }
 
     #contacts{
-        flex-wrap: wrap;
-
+        width: 100px;
     }
 
     #contacts img{
         width: 20px;
-        margin: 5px;
-        border-radius: 5px;
-        /* padding: 10px; */
+    }
+
+    #works{
+        width: 140px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 749px) {
@@ -495,6 +500,10 @@ footer{
         font-size: 18px;
         font-weight: 300;
         line-height: 39px;
+    }
+
+    #bar{
+        height: 120px; 
     }
 
     #whatsapp-button{
